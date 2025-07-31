@@ -59,14 +59,22 @@ A web application built using **Python**, **Django**, **HTML**, **CSS**, and **J
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
-3. **Install dependencies**
+3. **Install dependencies**  
     `pip install -r requirements.txt`
 
-4. **Apply migrations**
-    `python manage.py migrate`
+4. **Apply migrations** 
+    ``` 
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+5. **Create a superuser (admin login)**
+   `python manage.py createsuperuser`  
+   - You will be prompted to enter a username, email, and password.
+   - This superuser account is used as the login ID for accessing the system.
 
-5. **Run the server**
+6. **Run the server**  
     `python manage.py runserver`
 
-6. **Open in browser**
-    Visit: `http://127.0.0.1:8000/`
+7. **Open in browser**  
+   - Visit: `http://127.0.0.1:8000/`
+   - Use your superuser credentials to log in
